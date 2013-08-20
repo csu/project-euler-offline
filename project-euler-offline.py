@@ -2,7 +2,7 @@
 '''
 project-euler-offline.py
 Christopher Su
-Template for Python scripts loading JSON files.
+Checks solutions to Project Euler problems offline.
 '''
 
 import os
