@@ -25,19 +25,19 @@ def main():
     plain_text = triple_des('03b5660c7c16a07b').decrypt(txtStr, padmode=2)
     solutions = loadJSON(plain_text)
 
-    current = raw_input("What problem are you currently working on? ")
+    current = input("What problem are you currently working on? ")
 
     while True:
-        proposed = raw_input("\nEnter solution: ")
+        proposed = input("\nEnter solution: ")
         if proposed == "exit":
             break
         elif proposed == solutions[current]:
-            print "Correct!"
-            current = raw_input("\nWhat problem are you working on? ")
+            print("Correct!")
+            current = input("\nWhat problem are you working on? ")
             if current == "exit":
                 break
         else:
-            print "Sorry, that is incorrect."
+            print("Sorry, that is incorrect.")
 
 if __name__ == "__main__":
     dir = os.path.dirname(__file__)
