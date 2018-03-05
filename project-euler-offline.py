@@ -19,7 +19,7 @@ def loadJSON(jsonStr):
 
 def main():
     dir = os.path.dirname(__file__)
-    txtFile = open(os.path.join(dir, "solutions-encrypted"), "r")
+    txtFile = open(os.path.join(dir, "solutions-encrypted"), "rb")
     txtStr = txtFile.read()
     txtFile.close()
     plain_text = triple_des('03b5660c7c16a07b').decrypt(txtStr, padmode=2)
